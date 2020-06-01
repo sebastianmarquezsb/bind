@@ -1,0 +1,1 @@
+docker run -d --name=bind --dns=127.0.0.1 --publish=53:53/udp --publish=10000:10000 --volume d:/docker/bind:/data --env='ROOT_PASSWORD=password' sameersbn/bind:latest
